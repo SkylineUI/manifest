@@ -1,14 +1,17 @@
-# Pixel Experience #
+# SkylineUI #
 
 ### Sync ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b thirteen-plus
+
+$ mkdir SkylineUI
+$ cd SkylineUI
+$ repo init -u https://github.com/SkylineUI/manifest -b aosp-13
 
 # Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 ### Build ###
@@ -22,11 +25,18 @@ $ . build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ mka bacon -j$(nproc -all)
 ```
 
-### Submitting Patches ###
+# Credits:
 
-Patches are always welcome! Please submit your patches to our Gerrit.
+ * **Android Open Source Project**
+ * [**VoidUI**](https://github.com/VoidUI-Tiramisu)
+ * [**PixelExperience**](https://github.com/PixelExperience)
+ * [**EvolutionX**](https://github.com/Evolution-X)
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**crDroid**](https://github.com/crdroidandroid)
+ * [**PixysOS**](https://github.com/PixysOS)
+ * [**YAAP**](https://github.com/yaap)
 
-[Gerrit push guide](https://wiki.pixelexperience.org/help/submit-patch/)
+ * And too many other roms that I forgot to mention
