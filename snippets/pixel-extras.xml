@@ -11,10 +11,10 @@
 
   <!-- General repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="skyline" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
-  <!--project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" /-->
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="skyline" />
+  <!--project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="skyline" /-->
 
   <!-- Hardware repos -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
@@ -48,4 +48,7 @@
 
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
+
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
 </manifest>
