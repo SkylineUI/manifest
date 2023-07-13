@@ -1,15 +1,33 @@
-# Pixel Experience #
+# SkylineUI #
 
-### Sync ###
+[![Download SkylineUI](https://img.shields.io/sourceforge/dt/skylineui.svg)](https://sourceforge.net/projects/skylineui/files/latest/download)
+
+### Sync SkylineUI Source ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b thirteen-plus
 
-# Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+$ mkdir SkylineUI
+$ cd SkylineUI
 ```
+
+- Normal Source
+```bash
+$ repo init -u https://github.com/SkylineUI/manifest -b aosp-13
+```
+- Source with jemalloc memory allocator
+```bash
+$ repo init -u https://github.com/SkylineUI/manifest -b aosp-13-jem
+```
+
+* ¿What is [Jemalloc Memory Allocator](https://jemalloc.net/)?
+
+Once you have chosen a source branch, you can proceed with the synchronization using the following command:
+```bash
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+**Note:** To save space and reduce download time during the synchronization process, you can also pass `--depth 1` to the `repo sync` command. However, using `--depth 1` will result in the repositories being synced without any commit history.
 
 ### Build ###
 
@@ -22,11 +40,20 @@ $ . build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ mka bacon -j$(nproc --all)
 ```
 
-### Submitting Patches ###
+# Credits:
 
-Patches are always welcome! Please submit your patches to our Gerrit.
+| Project                           |
+|-------------------------------|
+| **Android Open Source Project**   |
+| [**VoidUI**](https://github.com/VoidUI-Tiramisu) |
+| [**PixelExperience**](https://github.com/PixelExperience) |
+| [**EvolutionX**](https://github.com/Evolution-X) |
+| [**LineageOS**](https://github.com/LineageOS) |
+| [**crDroid**](https://github.com/crdroidandroid) |
+| [**PixysOS**](https://github.com/PixysOS) |
+| [**YAAP**](https://github.com/yaap) |
 
-[Gerrit push guide](https://wiki.pixelexperience.org/help/submit-patch/)
+ * And too many other roms that I forgot to mention

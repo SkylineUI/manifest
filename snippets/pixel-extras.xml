@@ -11,11 +11,11 @@
   <project path="external/tinyxml" name="external_tinyxml" remote="pixel" />
 
   <!-- General repos -->
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel-plus" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="skyline" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="skyline" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel-plus" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="skyline" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="skyline" />
 
   <!-- Hardware repos -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
@@ -46,4 +46,11 @@
 
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
+
+  <!-- Prebuilts repos - Snapdragon LLVM Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="snapdragon-clang" remote="voidui-gitlab" clone-depth="1" />
+
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
+
 </manifest>
