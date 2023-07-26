@@ -53,4 +53,7 @@
   <!-- Hardware Xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
 
+  <!-- GameSpace Chaldeaprjkt -->
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="voidui" />
+
 </manifest>
