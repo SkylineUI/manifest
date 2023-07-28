@@ -20,7 +20,7 @@
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="pixel" />
 
   <!-- Hardware repos - HALS -->
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="skyline">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- for AOSP sdm845, we override os_pickup.mk -->
@@ -84,11 +84,11 @@
   <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" remote="pixel" />
   <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" remote="pixel" />
   <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8450/audio/agm" name="hardware_qcom-caf_sm8450_audio_agm" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8450/audio/pal" name="hardware_qcom-caf_sm8450_audio_pal" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="hardware_qcom-caf_sm8450_audio_primary-hal" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom-caf_sm8450_display" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8450/media" name="hardware_qcom-caf_sm8450_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8450/audio/agm" name="hardware_qcom-caf_sm8450_audio_agm" remote="skyline" />
+  <project path="hardware/qcom-caf/sm8450/audio/pal" name="hardware_qcom-caf_sm8450_audio_pal" remote="skyline" />
+  <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="hardware_qcom-caf_sm8450_audio_primary-hal" remote="skyline" />
+  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom-caf_sm8450_display" remote="skyline" />
+  <project path="hardware/qcom-caf/sm8450/media" name="hardware_qcom-caf_sm8450_media" remote="skyline" />
   <project path="hardware/qcom-caf/sm8550/audio/agm" name="hardware_qcom-caf_sm8550_audio_agm" remote="pixel" />
   <project path="hardware/qcom-caf/sm8550/audio/pal" name="hardware_qcom-caf_sm8550_audio_pal" remote="pixel" />
   <project path="hardware/qcom-caf/sm8550/audio/primary-hal" name="hardware_qcom-caf_sm8550_audio_primary-hal" remote="pixel" />
