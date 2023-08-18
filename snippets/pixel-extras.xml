@@ -28,7 +28,7 @@
   <project path="packages/apps/RepainterService" name="packages_apps_RepainterService" remote="pixel-plus" />
   <project path="packages/apps/ParanoidGlyph" name="packages_apps_ParanoidGlyph" remote="pixel" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pixel" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="skyline" />
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="pixel" />
 
