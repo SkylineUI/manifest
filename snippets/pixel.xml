@@ -27,6 +27,10 @@
           fetch="https://github.com/SkylineUI"
           revision="aosp-13" />
 
+  <remote name="skyline-devices"
+          fetch="https://github.com/SkylineUI-Devices"
+          revision="aosp-13" />
+
   <remote name="voidui-gitlab"
           fetch="https://gitlab.com/VoidUI"
           revision="aosp-13" />
