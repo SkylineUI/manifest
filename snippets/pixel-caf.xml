@@ -115,7 +115,7 @@
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="pixel" />
   <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="pixel" />
   <project path="vendor/qcom/opensource/thermal-engine" name="vendor_qcom_opensource_thermal-engine" remote="pixel" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="skyline" />
   <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="pixel" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="pixel" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" remote="pixel" />
