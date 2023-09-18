@@ -12,16 +12,10 @@ $ mkdir SkylineUI
 $ cd SkylineUI
 ```
 
-- Normal Source
+- Repo Init Source
 ```bash
 $ repo init -u https://github.com/SkylineUI/manifest -b aosp-13
 ```
-- Source with jemalloc memory allocator
-```bash
-$ repo init -u https://github.com/SkylineUI/manifest -b aosp-13-jem
-```
-
-* ¿What is [Jemalloc Memory Allocator](https://jemalloc.net/)?
 
 Once you have chosen a source branch, you can proceed with the synchronization using the following command:
 ```bash
