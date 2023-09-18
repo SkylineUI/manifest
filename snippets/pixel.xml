@@ -95,7 +95,7 @@
   <!-- Hardware repos -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="pixel" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="voidui" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="skyline" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="hardware_knowles_athletico_sound_trigger_hal" remote="pixel" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
