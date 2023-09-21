@@ -50,9 +50,6 @@
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
 
-  <!-- Prebuilts repos - Snapdragon LLVM Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="snapdragon-clang" remote="voidui-gitlab" clone-depth="1" />
-
   <!-- Hardware Xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
 
