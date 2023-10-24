@@ -18,6 +18,10 @@
           fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
           revision="fourteen" />
 
+  <remote name="skyline"
+          fetch="https://github.com/SkylineUI"
+          revision="aosp-14" />
+
   <!-- External repos -->
   <project path="external/avb" name="external_avb" remote="pixel" />
   <project path="external/boringssl" name="external_boringssl" remote="pixel" />
