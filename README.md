@@ -14,11 +14,11 @@ $ cd SkylineUI
 
 - Skyline-Atlas
 ```bash
-$ repo init -u https://github.com/SkylineUI/manifest -b aosp-14
+repo init -u https://github.com/SkylineUI/manifest -b aosp-14
 ```
 Once you have chosen a source branch, you can proceed with the synchronization using the following command:
 ```bash
-$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 **Note:** To save space and reduce download time during the synchronization process, you can also pass `--depth 1` to the `repo sync` command. However, using `--depth 1` will result in the repositories being synced without any commit history.
 
