@@ -5,12 +5,6 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
 
-  <remote name="github"
-          fetch="https://github.com/" />
-
-  <remote name="gitlab"
-          fetch="https://gitlab.com" />
-
   <default revision="refs/tags/android-14.0.0_r21"
            remote="aosp"
            sync-j="4"
@@ -1282,9 +1276,9 @@
   <!-- Remove unused AOSP repos -->
   <include name="snippets/remove.xml" />
 
-  <!-- Add all PixelExperience repos -->
+  <!-- Add all PixelExperience / SkylineUI / LineageOS repos -->
+  <include name="snippets/skyline.xml" />
   <include name="snippets/pixel.xml" />
-  <include name="snippets/pixel-extras.xml" />
-  <include name="snippets/pixel-caf.xml" />
+  <include name="snippets/lineage.xml" />
 
 </manifest>
