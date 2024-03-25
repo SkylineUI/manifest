@@ -13,6 +13,10 @@
            fetch="https://gitlab.com/PixelOS-Devices"
            revision="refs/heads/fourteen" />
 
+  <remote name="skyline"
+          fetch="https://github.com/SkylineUI"
+          revision="pos" />
+
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
 
@@ -20,7 +24,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk" remote="PixelOS">
+  <project path="build/make" name="build" groups="pdk" remote="skyline">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,14 +33,14 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="PixelOS">
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="skyline">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="PixelOS" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="skyline" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="skyline" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS" />
 
   <!-- Hardware -->
@@ -44,7 +48,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="PixelOS" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="PixelOS" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="skyline" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="PixelOS" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="PixelOS" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="PixelOS" />
@@ -66,10 +70,10 @@
 
   <!-- Packages -->
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="PixelOS" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="PixelOS" />
+  <!--<project path="packages/apps/Updates" name="packages_apps_Updates" remote="PixelOS" />-->
 
   <!-- Vendor -->
-  <project path="vendor/aosp" name="vendor_aosp" remote="PixelOS" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="skyline" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="PixelOS" />
   <project path="vendor/microsoft" name="vendor_microsoft" remote="PixelOS" />
   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Devices-Gitlab" />
