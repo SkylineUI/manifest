@@ -24,7 +24,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk" remote="skyline">
+  <!--<project path="build/make" name="build" groups="pdk" remote="skyline">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -36,11 +36,11 @@
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="skyline">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  </project>-->
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="skyline" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="skyline" />
+  <!--<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="skyline" />-->
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS" />
 
   <!-- Hardware -->
@@ -48,7 +48,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="PixelOS" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="skyline" />
+  <!-- <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="skyline" />-->
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="PixelOS" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="PixelOS" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="PixelOS" />

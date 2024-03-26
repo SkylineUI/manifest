@@ -8,8 +8,8 @@
   <remove-project name="platform/bootable/recovery" />
 
   <!-- Build -->
-  <remove-project name="platform/build" />
-  <remove-project name="platform/build/soong" />
+  <!--<remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />-->
 
   <!-- Device -->
   <remove-project name="device/amlogic/yukawa" />
@@ -103,7 +103,7 @@
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av"/>
-  <remove-project name="platform/frameworks/base"/>
+  <!--<remove-project name="platform/frameworks/base"/>-->
   <remove-project name="platform/frameworks/native"/>
   <remove-project name="platform/frameworks/opt/calendar" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -131,7 +131,7 @@
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Nfc" />
-  <remove-project name="platform/packages/apps/Settings" />
+  <!--<remove-project name="platform/packages/apps/Settings" />-->
   <remove-project name="platform/packages/modules/adb" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/common" />
